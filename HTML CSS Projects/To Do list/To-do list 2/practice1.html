@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>To-do List practice 1</h2>
+    <input class="DoList" type="text" placeholder="Task Name">
+    <button class="addBtn" onclick=" taskAdd()">Add</button>
+    <p class="task"></p>
+
+
+    <script>
+
+        const toDoList = [];
+
+        const inputElement = document.querySelector(".DoList");
+        const Btn = document.querySelector("addBtn");
+
+        function taskAdd() {
+            const name = inputElement.value;
+
+            if (name === '') {
+                alert('You must write something')
+            }
+            else {
+                toDoList.push(name);
+            }
+            console.log(toDoList)
+
+            inputElement.value = '';
+        }
+
+
+    </script>
+</body>
+
+</html>

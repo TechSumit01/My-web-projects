@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="selector">
+            <div id="select-field">
+                <p id="select-text">Select Social Media</p>
+                <img src="Images/arrow.png" alt=" " id="arrow" >
+            </div>
+        </div>
+
+        <ul id="list" class="hide">
+            <li class="option">
+                <img src="Images/facebook.png" alt="">
+                <p>
+                    Facebook
+                </p>
+            </li>
+            <li class="option">
+                <img src="Images/youtube.png" alt="">
+                <p>
+                    Youtube
+                </p>
+            </li>
+            <li class="option">
+                <img src="Images/instagram.png" alt="">
+                <p>
+                    Instagram
+                </p>
+            </li>
+            <li class="option">
+                <img src="Images/twitter.png" alt="">
+                <p>
+                    Twitter
+                </p>
+            </li>
+            <li class="option">
+                <img src="Images/pinterest.png" alt="">
+                <p>
+                    Pinterest
+                </p>
+            </li>
+            <li class="option">
+                <img src="Images/whatsapp.png" alt="">
+                <p>
+                    WhatsApp
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        const selectField = document.getElementById('select-field');
+        const selectText = document.getElementById('select-text');
+        const options = document.querySelectorAll('.option');
+        const list = document.getElementById('list')
+
+        for (let option of options) {
+            option.addEventListener('click', function () {
+                selectText.innerHTML = option.innerHTML;
+                list.classList.toggle('hide');
+            });
+        }
+
+        selectField.addEventListener('click', () => {
+            list.classList.toggle('hide');
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

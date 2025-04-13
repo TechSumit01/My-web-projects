@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+    padding: 11px 12px;
+  }
+
+  nav .left-nav .menu-bar {
+    display: none;
+  }
+  .left-nav .logo {
+    width: 120px;
+  }
+
+  nav .middle-nav .search-bar {
+    border: 1px solid #cdc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 38vw;
+  }
+  nav .middle-nav .search-bar input {
+    width: 105px;
+    padding: 6px 2px;
+  }
+
+  nav .right-nav img {
+    display: none;
+  }
+  nav .right-nav .profile {
+    display: block;
+    width: 33px;
+  }
+
+  .aside {
+    display: none;
+  }
+
+
+/* !important */
+
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#ECEFFE, #CED6FB);
+}
+
+.card-item {
+    list-style: none;
+}
+
+.card-list {
+    display: flex;
+    gap: 16px;
+
+}
+
+.container {
+    overflow: hidden;
+    /* Prevent content overflow */
+    max-width: 90%;
+    /* Set a container width */
+    margin: 0 auto;
+    /* Center the slider */
+}
+
+.card-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Smooth sliding effect */
+    will-change: transform;
+    /* Optimizes performance */
+}
+
+.card-item {
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    width: calc((100% - 32px) / 3);
+    /* Adjust width based on cards per view */
+    margin-right: 16px;
+    /* Space between cards */
+}
+
+
+
+.card-link {
+    width: 400px;
+    display: block;
+    background-color: white;
+    padding: 18px;
+    text-decoration: none;
+    border-radius: 11px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-link .card-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.card-link .badge {
+    width: 110px;
+    background: rgb(192, 227, 238);
+    padding: 11px;
+    border-radius: 50px;
+    margin: 11px 0;
+    color: rgb(13, 121, 245);
+    font-weight: 500;
+}
+
+.card-link .card-title {
+    color: black;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.card-link .card-button {
+    outline: none;
+    color: blue;
+    padding: 6px;
+    font-size: 24px;
+    margin-top: 12px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    background-color: lightblue;
+    border: 1px solid rgb(29, 136, 236);
+    cursor: pointer;
+    transition: 0.4 ease;
+}
+
+.card-link:hover .card-button {
+    color: white;
+    background: rgb(41, 41, 241);
+}

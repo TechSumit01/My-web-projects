@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>To-do List practice 2</h2>
+    <input class="DoList" type="text" placeholder="Task Name">
+    <button class="addBtn" onclick=" taskAdd()">Add</button>
+    <div class="task">text</div>
+
+    <script>
+        const toDoList = ['make dinner', 'wash dishes'];
+
+        renderList()
+
+        function renderList() {
+            let todoListHtml = '';
+
+            for (let i = 0; i < toDoList.length; i++) {
+                const toDo = toDoList[i];
+                const html = `<p>${toDo}</p>`;
+                todoListHtml += html;
+            }
+
+            document.querySelector('.task').innerHTML = todoListHtml;
+        }
+
+        function taskAdd() {
+            const Btn = document.querySelector("addBtn");
+            const inputElement = document.querySelector(".DoList");
+            const name = inputElement.value;
+
+            if (name === '') {
+                alert('You must write something')
+            }
+            else {
+                toDoList.push(name);
+            }
+            console.log(toDoList)
+
+            inputElement.value = '';
+            renderList()
+        }
+
+    </script>
+</body>
+
+</html>

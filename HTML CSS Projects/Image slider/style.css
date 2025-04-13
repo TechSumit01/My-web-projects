@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: gray;
+}
+
+main {
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    /* Start off-screen */
+    transition: transform 0.5s ease;
+    /* Smooth transition */
+}
+
+main .slide.active {
+    left: 0;
+    /* Visible image */
+}
+
+.button {
+    margin-left: 35%;
+}
+
+.button .btn {
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin: 26px;
+    cursor: pointer;
+}

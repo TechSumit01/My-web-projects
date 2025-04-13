@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  .container {
+    padding: 14px  !important;
+    /* padding: 5% 4% !important; */
+  }
+  .play-container {
+    flex-direction: column;
+  }
+  .play-container .play-video {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .play-container .play-video iframe {
+    height: 300px;
+  }
+  .play-container .play-video .play-video-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .play-container .recommended{
+    width: 100%;
+  }
+  .play-container .recommended img{
+    width: 49%;
+  }
+}

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background: url(images/background.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 0% 8%;
+    position: relative;
+}
+
+.header img {
+    width: 100px;
+    padding: 22px 2px 20px 5px;
+    margin-left: 50px;
+    margin-bottom: 94px;
+    display: flex;
+
+}
+
+.hero {
+    top: 40%;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 11px;
+}
+
+.hero>p {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.rocket img {
+    width: 200px;
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+.launching {
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 11px;
+}
+
+.launching>p {
+    font-size: 44px;
+    color: orangered;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 11px;
+}
+
+.first {
+    font-size: 48px;
+    font-weight: 500;
+
+}
+
+.second {
+    font-size: 17px;
+    font-weight: 450;
+
+}
+
+.btn {
+    width: 150px;
+    outline: none;
+    border: 2px solid rgb(255, 254, 254);
+    color: white;
+    padding: 12px 12px;
+    background: none;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 8px;
+}
+
+.btn img {
+    width: 14px;
+    color: rgb(255, 255, 255);
+}

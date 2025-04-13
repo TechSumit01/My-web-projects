@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(#f1faff, #cbe4ff);
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: #151A2D;
+    width: 270px;
+    position: fixed;
+    margin: 16px;
+    border-radius: 12px;
+    height: calc(100vh - 32px);
+    transition: 0.4s ease;
+}
+
+.collapsed {
+    width: 85px;
+    /* background-color: red; */
+
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    position: relative;
+}
+
+.sidebar-header .header-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.sidebar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    transition: 0.4s ease;
+
+}
+
+.sidebar-nav .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2px; */
+    padding: 0px 15px;
+    transform: translateY(5px);
+    transform: translate(15px);
+    transition: 0.4s ease;
+
+}
+
+.sidebar-header .toggler {
+    position: absolute;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    background: rgb(255, 255, 255);
+}
+.sidebar-header .toggler span{
+    font-size: 1.75rem;
+    transform: 0.4s ease;
+}
+
+.sidebar.collapsed .sidebar-header .toggler {
+    transform: translate(-4px, 65px);
+}
+.sidebar.collapsed .sidebar-header .toggler span{
+    transform: rotate(180deg);
+
+}
+.sidebar-header .toggler:hover {
+    background: #dde4fb;
+}
+
+.sidebar.collapsed .sidebar-nav .primary-nav {
+    transform: translatey(45px);
+
+}
+
+.sidebar-nav .nav-link:hover {
+    background: white;
+    color: black;
+    border-radius: 4px;
+}
+
+.sidebar-nav .nav-link .nav-label {
+    transition: opacity 0.4s ease;
+}
+
+.sidebar.collapsed .sidebar-nav .nav-link .new-label {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar-nav .secondary-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}

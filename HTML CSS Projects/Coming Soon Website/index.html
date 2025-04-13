@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="hero">
+            <p>Website is under Maintainence</p>
+            <div class="launching">We're <p>Launching</p>Soon..</div>
+            <div class="time">
+                <div class="">
+                    <p class="first days">00</p>
+                    <p class="second">Days</p>
+                </div>
+                <div class="">
+                    <p class="first hour">10</p>
+                    <p class="second">Hours</p>
+                </div>
+                <div class="">
+                    <p class="first min">40</p>
+                    <p class="second">Minutes</p>
+                </div>
+                <div class="">
+                    <p class=" sec first">22</p>
+                    <p class="second">Second</p>
+                </div>
+            </div>
+            <button class="btn">Learn More <img src="images/triangle.png" alt=""></button>
+        </div>
+        <div class="rocket">
+            <img src="images/rocket.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        const countDown = new Date("Oct 29, 2024, 00:00:00");
+
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDown - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.querySelector('.days').innerHTML = days;
+            document.querySelector('.hour').innerHTML = hours;
+            document.querySelector('.min').innerHTML = minutes;
+            document.querySelector('.sec').innerHTML = seconds;
+
+            if(distance < 0){
+                clearInterval(x);
+                
+            document.querySelector('.days').innerHTML = "00";
+            document.querySelector('.hour').innerHTML = "00";
+            document.querySelector('.min').innerHTML = "00";
+            document.querySelector('.sec').innerHTML = "00";
+            }
+
+        }, 1000);
+
+
+
+
+    </script>
+</body>
+
+</html>

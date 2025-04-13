@@ -1,0 +1,21 @@
+.container {
+  /* position: absolute; */
+  padding: 20px 2% 20px 17%;
+  background: #f9f9f9;
+  /* z-index: -2; */
+  width: 100%;
+}
+
+.large-container {
+  padding-left: 7%;
+}
+
+/* Video CSS  */
+
+.play-container {
+  display: flex;
+  padding: 20px 3.5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+}

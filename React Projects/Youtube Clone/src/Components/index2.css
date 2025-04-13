@@ -1,0 +1,162 @@
+.play-video {
+  width: 66%;
+}
+.play-video iframe {
+  width: 100%;
+  height: 415px;
+  border-radius: 8px;
+}
+
+.play-video h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.play-video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0px;
+}
+
+.play-video-info p {
+  font-size: 0.9rem;
+  color: #514f4f;
+  font-weight: 400;
+}
+.play-video-info .like-dislike-icon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+}
+.play-video-info .like-dislike-icon span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #494848;
+  font-weight: 500;
+}
+
+.play-video-info img {
+  width: 22px;
+  cursor: pointer;
+}
+
+.channel-info {
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+}
+
+.channel-info img {
+  width: 46px;
+  border-radius: 50%;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.channel-info div {
+  flex: 1;
+}
+
+.channel-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.channel-info p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #494848;
+}
+
+.channel-info button {
+  background: red;
+  color: white;
+  padding: 10px 22px 10px 22px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.video-info {
+  padding-left: 55px;
+  margin: 15px 0;
+}
+
+.video-info > p {
+  font-size: 0.9rem;
+  color: #494848;
+}
+.comments-line {
+  margin: 11px 0;
+}
+
+.video-info h4 {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.video-info .comment {
+  align-items: self-start;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.video-info .comment img {
+  width: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-info .comment h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.video-info .comment h3 span {
+  font-size: 0.84rem;
+  color: #494848;
+  font-weight: 500;
+}
+.video-info .comment p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #494848;
+}
+
+.video-info .comment .comment-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.video-info .comment .comment-action img {
+  width: 22px;
+  cursor: pointer;
+}
+
+/* Recommended CSA  */
+
+.recommended {
+  width: 33%;
+}
+.side-video-list {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+.side-video-list video {
+  width: 50%;
+}
+.side-video-list .side-video-info h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.side-video-list .side-video-info p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
